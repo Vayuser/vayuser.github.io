@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fadlan HARIS</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div id="no-mobile" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9999;background:#fff;color:#222;align-items:center;justify-content:center;text-align:center;font-size:1.5rem;">
+    Ce site n'est pas disponible sur mobile. Veuillez utiliser un ordinateur.
+  </div>
+
+  <header>
+  <nav>
+    <!--<div class="logo">VotreNom</div> -->
+    <ul class="nav-links">
+      <li><a href="#accueil" onclick="showSection('accueil')">ACCUEIL</a></li>
+      <li><a href="#about" onclick="showSection('about')">PROFIL</a></li>
+      <li><a href="#experience" onclick="showSection('experience')">EXPÉRIENCES PROFESSIONNELLES</a></li>
+      <li><a href="#education" onclick="showSection('education')">FORMATION</a></li>
+      <li><a href="#skills" onclick="showSection('skills')">COMPÉTENCES</a></li>
+      <li><a href="#projects" onclick="showSection('projects')">PROJETS</a></li>
+      <li><a href="#interet" onclick="showSection('interet')">CENTRES D'INTÉRÊT</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Muhammad Fadlan BIN MOHD HARIS</h1>
+      <p>Étudiant en BUT Réseaux et Télécommunications</p>
+      <p>à l'IUT Nice Côte d'Azur, site de Sophia Antipolis</p>
+    </div>
+    <div class="hero-photo">
+      <img src="./resources/profilphoto.jpg" alt="Ma photo de profil"/>
+    </div>
+  </section>
+
+  <section id="accueil" class="accueil section-content">
+    <h2>ACCUEIL</h2>
+    <h1>Bienvenue sur mon site !</h1>
+    <p>Je m'appelle Muhammad Fadlan bin Mohd Haris, j'ai 20 ans et je suis un étudiant étranger originaire de Malaisie.</p>
+    <p>Différentes rubriques sont disponibles sur ce site, comme <a href="#skills" onclick="showSection('skills')">mes compétences</a> et <a href="#experience" onclick="showSection('experience')">mes expériences professionnelles</a>.</p>
+    <p>N'hésitez pas à me contacter, je vous répondrai dans les meilleurs délais. Bonne visite !</p>
+    <section class="infos">
+      <h3>INFOS</h3>
+      <ul>
+        <li><strong>Téléphone :</strong> 07 59 52 69 64</li>
+        <li><strong>Email :</strong> fadlanharisxd@gmail.com</li>
+        <li><strong>Adresse du site :</strong> fadlanharis.pf22-minecraft.net</li>
+        <li><strong>Date de naissance :</strong> 14/07/2005, nationalité malaisienne</li>
+        <li><strong>Permis de conduire :</strong> B (500cc+ pour les motos) & D (voitures à transmission manuelle et automatique)</li>
+      </ul>
+      <button class="btn btn-main" onclick="window.location.href='./pdf/BINMOHDHARIS_CV-BUT1_2024-2025.pdf'">Télécharger mon CV</button>
+    </section>
+    <form id="contact-form" class="contact-form">
+  <h3>Me contacter</h3>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">Prénom / NOM</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Téléphone</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+  </div>
+  <div class="form-row-single form-group">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-row-single form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Rédigez votre message ici..." required></textarea>
+  </div>
+  <button type="submit" class="btn btn-main">Envoyer</button>
+  <div id="form-success" style="display:none;color:#e56b1f;margin-top:1rem;">
+    Merci ! Votre message a bien été envoyé.
+  </div>
+  <div id="form-error" style="display:none;color:red;margin-top:1rem;">
+    Une erreur est survenue. Veuillez réessayer plus tard.
+  </div>
+</form>
+  </section>
+
+  <section id="about" class="about section-content" style="display:none;">
+    <h2>PROFIL</h2>
+    <p>🌟 Bonjour ! Je m'appelle Muhammad Fadlan BIN MOHD HARIS, étudiant en 1<sup>ère</sup> année de Bachelor Universitaire de Technologie Réseaux et Télécommunications à l'IUT Nice Côte d'Azur, site de Sophia Antipolis. Je suis un étudiant étranger qui vient de Malaisie.</p>
+    <p>🎓 Je suis passionné par les technologies de l'information et de la communication, et je m'efforce d'acquérir des compétences solides dans ce domaine. Mon objectif est de devenir un professionnel compétent et polyvalent, capable de relever les défis technologiques actuels.</p>
+    <p>💻 En dehors de mes études, je suis également passionné de jeux vidéo et de programmation. J'aime explorer de nouvelles technologies et apprendre constamment pour améliorer mes compétences.</p>
+    <p>🔍 Curieux et toujours en quête d'apprentissage, je suis à la recherche de nouvelles opportunités pour grandir et apporter ma contribution. N'hésitez pas à me contacter pour échanger sur d'éventuelles collaborations !</p>
+  </section>
+
+  <section id="experience" class="experience section-content" style="display:none;">
+    <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
+    <div class="exp-list">
+    <div class="exp-block">
+      <div class="exp-text">
+        <h3>Depuis 2021</h3>
+        <h3>Réparation de matériel électronique | Indépendant</h3>
+        <ul>
+          <li>Réparation de téléphones portables, tablettes et ordinateurs.</li>
+          <li>Diagnostic et résolution de problèmes matériels et logiciels.</li>
+          <li>Conseil aux clients sur l'entretien et la prévention des pannes.</li>
+          <li>Gestion des stocks de pièces détachées et d'outils de réparation.</li>
+          <li>Formation continue sur les nouvelles technologies et les tendances du marché.</li>
+        </ul>
+        <p>Cette expérience m'a permis de développer mes compétences techniques en électronique et en informatique, ainsi que ma capacité à résoudre des problèmes de manière autonome.</p>
+      </div>
+      <div class="exp-img overlap-imgs">
+        <img src="./resources/repair1.jpg" alt="Expérience 1">
+        <img src="./resources/repair2.jpg" alt="Expérience 1 bis" class="img-overlap">
+      </div>
+    </div>
+    </div>
+    <!-- Ajoutez d'autres blocs de la même façon -->
+  </section>
+
+  <section id="education" class="education section-content" style="display:none;">
+    <h2>FORMATION</h2>
+    <div class="exp-list">
+    <div class="exp-block">
+      <div class="exp-text">
+        <h3>2024 - Présent</h3>
+        <h3>BUT Réseaux et Télécommunications | IUT Nice Côte d'Azur, Sophia Antipolis</h3>
+        <p>Actuellement étudiant en BUT Réseaux et Télécommunications, je développe des compétences techniques et pratiques dans les domaines des réseaux informatiques, des télécommunications, et de la cybersécurité. Ce programme me permet d'acquérir une expertise approfondie et de me préparer à une carrière dans les technologies de l'information et de la communication.</p>
+      </div>
+      <div class="formation-img">
+        <img src="./resources/iut-nice.png" alt="IUT Nice Côte d'Azur">
+      </div>
+    </div>
+    <div class="exp-block">
+      <div class="exp-text">
+        <h3>2023 - 2024</h3>
+        <h3>Programme préparatoire aux écoles d’ingénieur en France | UniKL MFI (Institut Franco-Malaisien)</h3>
+        <p>Durant cette année préparatoire, j'ai renforcé mes compétences académiques et linguistiques pour intégrer un programme universitaire en France. J'ai réussi à obtenir les certifications DELF A2 et DELF B1, attestant de mon niveau de maîtrise de la langue française. Cette expérience m'a permis de m'adapter à un environnement éducatif exigeant et multiculturel.</p>
+      </div>
+      <div class="formation-img">
+        <img src="./resources/mfi.jpg" alt="Institut Franco-Malaisien">
+      </div>
+    </div>
+    <div class="exp-block">
+      <div class="exp-text">
+        <h3>2018 - 2022</h3>
+        <h3>Sijil Pelajaran Malaysia (SPM) | MRSM Gemencheh</h3>
+        <p>Le SPM, équivalent du baccalauréat scientifique en France, m'a permis de développer une solide base en sciences et en mathématiques. J'ai obtenu le niveau CEFR B2 en anglais, démontrant une maîtrise avancée de la langue. Cette formation m'a également préparé à poursuivre des études supérieures dans des domaines techniques et scientifiques.</p>
+      </div>
+      <div class="formation-img">
+        <img src="./resources/mrsm.jpg" alt="MRSM Gemencheh">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills section-content" style="display:none;">
+    <h2>COMPÉTENCES</h2>
+  <div class="skills-desc">
+         <div class="skills-side-title">Compétences techniques</div>
+         <h1>Réseaux</h1>
+         <ul>
+           <li>Connaissance des protocoles TCP/IP, UDP, ICMP, ARP, etc.</li>
+           <li>Configuration de routeurs et de commutateurs Cisco</li>
+           <li>Gestion des réseaux locaux (LAN) et étendus (WAN)</li>
+           <li>Analyse de la sécurité des réseaux et mise en place de mesures de protection</li>
+           <li>Utilisation d'outils de diagnostic réseau (Wireshark, traceroute, ping)</li>
+           <li>Utilisation des logiciels Cisco Packet Tracer / GNS3</li>
+         </ul>
+         <h1>Télécommunications</h1>
+         <ul>
+           <li>Compréhension des systèmes de communication</li>
+           <li>Connaissance des technologies de téléphonie IP (VoIP)</li>
+           <li>Configuration et gestion des équipements de télécommunication (Linphone, Asterisk)</li>
+           <li>Analyse des performances des réseaux de télécommunications</li>
+           <li>Connaissance des normes et réglementations en matière de télécommunications</li>
+         </ul>
+         <h1>Programmation</h1>
+         <ul>
+           <li>Langages de programmation : Python, JavaScript, HTML, CSS, PHP, Bash</li>
+           <li>Développement d'applications web et mobiles</li>
+           <li>Connaissance des bases de données (MySQL, MariaDB)</li>
+           <li>Utilisation de frameworks et bibliothèques (React, Node.js)</li>
+         </ul>
+         <div class="skills-side-title">Compétences comportementales</div>
+         <h1>Soft-skills</h1>
+         <ul>
+           <li>Capacité à travailler en équipe et à collaborer efficacement</li>
+           <li>Excellentes compétences en communication écrite et orale</li>
+           <li>Capacité d'adaptation et flexibilité face aux changements</li>
+           <li>Résolution de problèmes et pensée critique</li>
+           <li>Gestion du temps et des priorités</li>
+         </ul>
+         <div class="skills-side-title">Compétences linguistiques</div>
+         <h1>Langues</h1>
+         <ul>
+           <li>Français : DELF Niveau B2</li>
+           <li>Anglais : CEFR Niveau B2</li>
+           <li>Malaisien : Langue maternelle</li>
+         </ul>
+         <h1>Communications</h1>
+         <ul>
+           <li>Formation à la prise de parole en public et apprentissage des codes pour communiquer efficacement à l'écrit et à l'oral</li>
+         </ul>
+  </div>
+  </section>
+
+  <section id="reseaux" class="reseaux projet section-content" style="display:none;">
+    <h2>RÉSEAUX</h2>
+    <div class="project-block">
+      <h3 class="project-title">S'initier aux réseaux informatiques</h3>
+      <div class="project-flex">
+        <div class="project-img">
+          <img src="./resources/iot-banner.jpg" alt="Projet Réseaux">
+        </div>
+        <div class="project-details">
+          <h3>Projet universitaire de 1<sup>ère</sup> année</h3>
+          <p>
+            Dans le cadre d’un projet universitaire captivant, j’ai eu l’occasion d’analyser en détail le fonctionnement de mon réseau domestique, révélant toute la complexité et les subtilités de son architecture.<br><br>
+            Cette aventure m’a permis de développer des compétences concrètes en réseaux, d’approfondir ma compréhension des protocoles et d’explorer des outils professionnels d’analyse et de diagnostic.<br><br>
+            Je vous invite à découvrir l’ensemble de mon travail à travers mes deux rapports complets, ainsi que des vidéos explicatives qui vous guideront pas à pas dans mes démarches et mes conclusions.
+          </p>
+          <ul>
+            <li><strong>Catégorie :</strong> Réseaux</li>
+            <li><strong>Notions utilisées :</strong> IPv4, Windows, Linux, SSID, protocoles, réseau local</li>
+            <li><strong>Logiciels utilisés :</strong> Wireshark, speedtest</li>
+          </ul>
+          <div class="project-links">
+            <a href="./pdf/sae12n1.pdf" class="btn btn-main">Télécharger mon rapport n°1</a>
+            <a href="./video/sae12v1.mp4" class="btn btn-outline">Vidéo n°1</a>
+          </div>
+          <div class="project-links">
+            <a href="./pdf/sae12n2.pdf" class="btn btn-main">Télécharger mon rapport n°2</a>
+            <a href="./video/sae12v2.mp4" class="btn btn-outline">Vidéo n°2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project navigation: previous / back to list / next -->
+    <div class="project-nav" aria-label="Navigation projets">
+      <button class="btn btn-outline" onclick="navigateProject('reseaux', -1)">← Précédent</button>
+      <a class="btn btn-outline" href="#projects" onclick="showSection('projects')">Retour aux projets</a>
+      <button class="btn btn-outline" onclick="navigateProject('reseaux', 1)">Suivant →</button>
+    </div>
+  </section>
+
+  <section id="telecom" class="telecom projet section-content" style="display:none;">
+    <h2>TÉLÉCOMMUNICATIONS</h2>
+    <div class="project-block">
+      <h3 class="project-title">Découvrir un dispositif de transmission</h3>
+      <div class="project-flex">
+        <div class="project-img">
+          <img src="./resources/telecom-banner.jpg" alt="Projet Télécommunications">
+        </div>
+        <div class="project-details">
+          <h3>Projet universitaire de 1<sup>ère</sup> année</h3>
+          <p>
+            Dans le cadre d’un projet universitaire, j’ai eu l’occasion d’étudier en profondeur les propriétés du câble coaxial, un support clé pour la transmission de signaux numériques. Cette exploration, mêlant théorie et application pratique, m’a permis de mieux comprendre son fonctionnement, ses avantages et ses limites dans le domaine des télécommunications.<br><br>
+            Cette expérience m’a apporté des connaissances solides sur l’atténuation du signal et les principes de la transmission filaire, tout en développant mon esprit d’analyse scientifique.<br><br>
+            Pour découvrir l’ensemble de mon travail, je vous invite à consulter mon rapport détaillé qui vous guidera à travers les différentes étapes de cette étude.
+          </p>
+          <ul>
+            <li><strong>Catégorie :</strong> Télécommunications</li>
+            <li><strong>Notions étudiées :</strong> Histoire et caractéristiques du câble coaxial, atténuation du signal, transmission filaire</li>
+            <li><strong>Logiciel et matériels utilisés :</strong> MATLAB, câble coaxial, oscilloscope, multimètre</li>
+          </ul>
+          <div class="project-links">
+            <a href="./pdf/sae13.pdf" class="btn btn-main">Télécharger mon rapport</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-nav" aria-label="Navigation projets">
+      <button class="btn btn-outline" onclick="navigateProject('telecom', -1)">← Précédent</button>
+      <a class="btn btn-outline" href="#projects" onclick="showSection('projects')">Retour aux projets</a>
+      <button class="btn btn-outline" onclick="navigateProject('telecom', 1)">Suivant →</button>
+    </div>
+  </section>
+
+  <section id="programmation" class="programmation projet section-content" style="display:none;">
+    <h2>PROGRAMMATION</h2>
+    <div class="project-block">
+      <h3 class="project-title">Introduction aux technologies Web</h3>
+      <div class="project-flex">
+        <div class="project-img">
+          <img src="./resources/webdev-banner.jpg" alt="Projet Programmation">
+        </div>
+        <div class="project-details">
+          <h3>Projet universitaire de 1<sup>ère</sup> année</h3>
+          <p>
+            Dans le cadre d’un projet universitaire enrichissant, j’ai eu l’opportunité de concevoir, en collaboration avec un ami, un site web dédié à la recherche de paroles de chansons, une thématique qui nous passionne.<br><br>
+            Cette expérience m’a permis de développer mes compétences en programmation web, notamment en HTML5 et CSS3, qui ont servi de base à la réalisation du site. J’ai également appris à structurer une interface utilisateur intuitive et à rendre la navigation agréable pour l’utilisateur.<br><br>
+            Je vous invite à découvrir notre site de recherche de paroles, fruit de notre travail et de notre passion commune pour la musique et le développement web.
+          </p>
+          <ul>
+            <li><strong>Catégorie :</strong> Programmation</li>
+            <li><strong>Notions utilisées :</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Logiciels utilisés :</strong> Visual Studio Code, GitHub</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://fadlanharis.pf22-minecraft.net/R109" class="btn btn-main">Voir mon site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-block alt-bg">
+      <h3 class="project-title">Web Dynamique</h3>
+      <div class="project-flex">
+        <div class="project-img">
+          <img src="./resources/webdev-banner2.jpg" alt="Projet Web Dynamique">
+        </div>
+        <div class="project-details">
+          <h3>Projet universitaire de 1<sup>ère</sup> année</h3>
+          <p>
+            Dans le cadre de ce projet universitaire, j'ai développé un site web dynamique permettant la gestion et l'affichage de données utilisateurs grâce à l'utilisation de PHP et MySQL.<br><br>
+            Ce projet m'a permis de découvrir le fonctionnement des applications web côté serveur, d'apprendre à manipuler une base de données, et de mettre en place des formulaires interactifs pour la saisie et la modification d'informations. J'ai également veillé à la sécurité des échanges et à la validation des données côté serveur.<br><br>
+            Cette expérience a renforcé mes compétences en développement full-stack et m'a donné une vision concrète de la création d'applications web dynamiques, de la conception à la mise en ligne.
+          </p>
+          <ul>
+            <li><strong>Catégorie :</strong> Programmation</li>
+            <li><strong>Notions utilisées :</strong> PHP, MySQL, HTML, CSS</li>
+            <li><strong>Logiciels utilisés :</strong> XAMPP, Visual Studio Code</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://fadlanharis.pf22-minecraft.net/R209" class="btn btn-main">Voir mon site dynamique</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-nav" aria-label="Navigation projets">
+      <button class="btn btn-outline" onclick="navigateProject('programmation', -1)">← Précédent</button>
+      <a class="btn btn-outline" href="#projects" onclick="showSection('projects')">Retour aux projets</a>
+      <button class="btn btn-outline" onclick="navigateProject('programmation', 1)">Suivant →</button>
+    </div>
+  </section>
+
+  <section id="systeme" class="systeme projet section-content" style="display:none;">
+    <h2>SYSTÈMES</h2>
+    <div class="project-block">
+      <h3 class="project-title">Déploiement du serveur Minecraft</h3>
+      <div class="project-flex">
+        <div class="project-img">
+          <img src="./resources/minecraft-banner.jpg" alt="Projet Programmation Minecraft">
+        </div>
+        <div class="project-details">
+          <h3>Projet personnel</h3>
+          <p>
+            Dans le cadre d’un projet personnel, j’ai entrepris le déploiement complet d’un serveur Minecraft afin de permettre à mes amis et moi de jouer ensemble dans un environnement personnalisé et sécurisé. J’ai configuré le serveur en utilisant Spigot et PaperMC, ce qui m’a permis d’installer et de gérer différents plugins pour enrichir l’expérience de jeu (gestion des permissions, mini-jeux, sauvegardes automatiques, etc.).<br><br>
+            Pour rendre le serveur accessible sans adresse IP publique, j’ai mis en place Tailscale afin de créer un réseau privé virtuel sécurisé entre tous les participants. Ce projet m’a permis de développer des compétences en administration système, en gestion de réseau, et en résolution de problèmes liés à l’hébergement de services en ligne. J’ai également documenté la procédure d’accès pour les nouveaux joueurs.<br><br>
+            Cette expérience m’a offert une vision concrète de la gestion d’un service en ligne, de la sécurité réseau, et de la collaboration technique autour d’un projet ludique.
+          </p>
+          <ul>
+            <li><strong>Catégorie :</strong> Système, Programmation</li>
+            <li><strong>Notions utilisées :</strong> Java, Bukkit, plugins</li>
+            <li><strong>Logiciels utilisés :</strong> Spigot, PaperMC, Tailscale</li>
+          </ul>
+          <div class="project-links">
+            <button class="btn btn-main" id="demander-acces-btn-mc">Demander l’accès au serveur</button>
+          </div>
+          <div id="acces-modal-mc" class="modal" style="display:none;">
+            <div class="modal-content">
+              <span class="close-modal" id="close-modal-mc">&times;</span>
+              <h4>Accès au serveur Minecraft</h4>
+              <p>
+                Pour rejoindre le serveur, vous devez être invité sur mon réseau Tailscale.<br>
+                Veuillez renseigner votre email pour recevoir une invitation.
+              </p>
+              <form id="access-request-form-mc" action="https://formspree.io/f/xgvyavvp" method="POST">
+                <input type="hidden" name="message" value="Je voudrais l'accès à votre serveur">
+                <label for="email-mc">Votre email (pour invitation Tailscale) :</label>
+                <input type="email" id="email-mc" name="email" required>
+                <button type="submit" class="btn btn-main">Envoyer la demande</button>
+              </form>
+              <div id="access-request-success-mc" style="display:none; color:#e56b1f; margin-top:1rem;">
+                Merci ! Votre demande a été envoyée. Je vous contacterai rapidement.
+              </div>
+            </div>
+          </div>
+          <div class="project-links">
+            <button class="btn btn-main" id="copy-ip-btn" data-ip="play.pf22-minecraft.net">
+              play.pf22-minecraft.net
+            </button>
+            <span id="copy-ip-success" style="display:none; color:#e56b1f; margin-left:1rem;">Adresse copiée !</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-nav" aria-label="Navigation projets">
+      <button class="btn btn-outline" onclick="navigateProject('systeme', -1)">← Précédent</button>
+      <a class="btn btn-outline" href="#projects" onclick="showSection('projects')">Retour aux projets</a>
+      <button class="btn btn-outline" onclick="navigateProject('systeme', 1)">Suivant →</button>
+    </div>
+  </section>
+
+  <section id="cybersecurite" class="cybersecurite projet section-content" style="display:none;">
+    <h2>CYBERSÉCURITÉ</h2>
+    <div class="project-block">
+      <h3 class="project-title">Se sensibiliser à l'hygiène informatique et à la cybersécurité</h3>
+      <div class="project-flex">
+        <div class="project-img">
+          <img src="./resources/cybersecurity-banner.jpg" alt="Projet Cybersécurité">
+        </div>
+        <div class="project-details">
+          <h3>Projet universitaire de 1<sup>ère</sup> année</h3>
+          <p>
+            Dans le cadre de ce projet universitaire, j’ai mené une recherche sur les cyberattaques récentes ayant touché de grandes entreprises, en me concentrant notamment sur la fuite de données subie par Free Mobile en 2024. J’ai analysé les causes et les conséquences de cet incident, ainsi que les méthodes utilisées par les attaquants.<br><br>
+            À partir de cette étude de cas, j’ai proposé des recommandations concrètes en matière de bonnes pratiques pour renforcer la sécurité informatique et limiter les risques de fuite de données. Ce travail m’a permis de mieux comprendre les enjeux actuels de la cybersécurité et l’importance d’une hygiène numérique rigoureuse, aussi bien pour les entreprises que pour les particuliers.
+          </p>
+          <ul>
+            <li><strong>Catégorie :</strong> Cybersécurité</li>
+            <li><strong>Notions utilisées :</strong> Sécurité des données, protection des informations personnelles</li>
+            <li><strong>Logiciels utilisés :</strong> Canva, Google (pour effectuer des recherches)</li>
+          </ul>
+          <div class="project-links">
+            <a href="./pdf/MuhammadFadlan_BINMOHDHARIS_Free_Mobile_cyberattaque.pdf" class="btn btn-main">Télécharger mon diaporama</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-nav" aria-label="Navigation projets">
+      <button class="btn btn-outline" onclick="navigateProject('cybersecurite', -1)">← Précédent</button>
+      <a class="btn btn-outline" href="#projects" onclick="showSection('projects')">Retour aux projets</a>
+      <button class="btn btn-outline" onclick="navigateProject('cybersecurite', 1)">Suivant →</button>
+    </div>
+
+  </section>
+
+  <section id="projects" class="projects section-content" style="display:none;">
+    <h2>PROJETS</h2>
+    <p>Voici une sélection de mes projets réalisés dans le cadre de mes études ou de mes initiatives personnelles. Chaque projet met en avant mes compétences techniques et ma capacité à résoudre des problèmes concrets.</p>
+    <div class="skills-flex">
+      <div class="skills-icons-col">
+         <div class="skills-side-title">Mes projets</div>
+         <div class="icon-center">
+           <a href="#reseaux" onclick="showSection('reseaux')">
+             <img src="./resources/network.png" alt="Projets en réseaux" title="Voir mes projets réseaux"/>
+           </a>
+         </div>
+         <div class="icon-center">
+           <a href="#telecom" onclick="showSection('telecom')">
+             <img src="./resources/telecom.png" alt="Projets en télécommunications" title="Voir mes projets télécommunications"/>
+           </a>
+         </div>
+         <div class="icon-center">
+           <a href="#programmation" onclick="showSection('programmation')">
+             <img src="./resources/programming.png" alt="Projets en programmation" title="Voir mes projets de programmation"/>
+           </a>
+         </div>
+         <div class="icon-center">
+           <a href="#systeme" onclick="showSection('systeme')">
+             <img src="./resources/system.png" alt="Projets en systèmes" title="Voir mes projets de systèmes"/>
+           </a>
+         </div>
+         <div class="icon-center">
+           <a href="#cybersecurite" onclick="showSection('cybersecurite')">
+             <img src="./resources/cybersecurite.png" alt="Projets en cybersécurité" title="Voir mes projets de cybersécurité"/>
+           </a>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="interet" class="interet section-content" style="display:none;">
+  <h2>MES CENTRES D'INTÉRÊT</h2>
+  <div class="hobbies-list">
+    <div class="hobby">
+      <img src="./resources/moto.jpg" alt="Sportbike">
+      <h3>Moto sportive</h3>
+      <p>Passionné par les motos sportives, j'aime explorer les routes et ressentir l'adrénaline.</p>
+    </div>
+    <div class="hobby">
+      <img src="./resources/voyage.jpg" alt="Voyage">
+      <h3>Voyage</h3>
+      <p>Découvrir de nouveaux endroits, cultures et paysages est une source d'inspiration pour moi.</p>
+    </div>
+    <div class="hobby">
+      <img src="./resources/cosplay.jpg" alt="Cosplay">
+      <h3>Cosplay</h3>
+      <p>Créer et incarner des personnages de fiction est une activité qui stimule ma créativité.</p>
+    </div>
+    <div class="hobby">
+      <img src="./resources/gym2.jpg" alt="Gym">
+      <h3>Gym</h3>
+      <p>Je m'entraîne régulièrement pour rester en forme et améliorer ma santé physique.</p>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 BIN MOHD HARIS. Tous droits réservés.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/muhammad-fadlan-bin-mohd-haris-90762534b/" target="_blank" aria-label="LinkedIn">
+        <img src="./resources/linkedin.png" alt="LinkedIn Icon">
+      </a>
+      <a href="https://www.facebook.com/FDLNHaris" target="_blank" aria-label="Facebook">
+        <img src="./resources/facebook.png" alt="Facebook Icon">
+      </a>
+    </div>
+  </footer>
+  <button id="dark-mode-toggle" aria-label="Basculer le mode sombre" title="Basculer le mode sombre">🌙</button>
+</body>
+</html>

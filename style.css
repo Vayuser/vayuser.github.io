@@ -1,0 +1,1067 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  gap: 1.2rem; /* Use gap for spacing */
+}
+
+.nav-links li {
+  position: relative;
+  flex: 1 1 0;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9f5a;
+}
+
+.hero {
+  background: #ff9f5a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 2rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  /* Outline effect */
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
+}
+
+
+.hero-photo img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px; /* Rectangle avec coins arrondis */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+.accueil,
+.about,
+.experience,
+.education,
+.skills,
+.reseaux,
+.telecom,
+.programmation,
+.systeme,
+.cybersecurite,
+.interet,
+.projects {
+  padding: 5rem 6rem;      /* Increase padding for a bigger box */
+  max-width: 1450px;       /* Increase max-width for a wider box */
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+  margin-top: 2rem;
+}
+
+.accueil h2,
+.about h2,
+.experience h2,
+.education h2,
+.skills h2,
+.reseaux h2,
+.telecom h2,
+.programmation h2,
+.systeme h2,
+.cybersecurite h2,
+.interet h2,
+.projects h2 {
+  font-size: 3rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.accueil h2::after,
+.about h2::after,
+.experience h2::after,
+.education h2::after,
+.skills h2::after,
+.reseaux h2::after,
+.telecom h2::after,
+.programmation h2::after,
+.systeme h2::after,
+.cybersecurite h2::after,
+.interet h2::after,
+.projects h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ff9f5a; /* Remplaced green with light orange accent */
+  border-radius: 2px;
+  margin-top: 0.5rem;
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  color: #ff9f5a;
+  text-decoration: none;
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.infos {
+  background: #e56b1f; /* dark orange (replacing green) */
+  color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.infos h3 {
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.infos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.infos li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+header nav {
+  width: 100%;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 0.5rem;
+  /* Outline effect */
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.section-content {
+  opacity: 1;
+  transition: opacity 0.4s;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+.section-content.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about p {
+  margin-bottom: 1.6rem; /* Adjust the value as you like */
+}
+
+.exp-list .exp-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3rem 3rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2.5rem;
+  background: #f2f8f7; /* Default color, will alternate below */
+  box-sizing: border-box;
+  width: 100%;
+  word-break: break-word;
+}
+
+.exp-list .exp-block:nth-child(even) {
+  flex-direction: row-reverse;
+  background: #ffd9c2;
+}
+
+.exp-text {
+  flex: 1 1 60%;
+  text-align: left;
+  width: 100%;
+}
+
+.exp-img {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exp-img img {
+  max-width: 260px;
+  max-height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.exp-img.overlap-imgs {
+  position: relative;
+  width: 260px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 140px;
+}
+
+/* 
+  Overlapping images in experience section:
+  - The first image (top left) is positioned with top/left.
+  - The second image (bottom right, class .img-overlap) is positioned with bottom/right.
+  - Adjust width/height/top/left/bottom/right for offset and size.
+*/
+
+.exp-img.overlap-imgs img {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: box-shadow 0.2s;
+}
+
+/* Top left image */
+.exp-img.overlap-imgs img:first-child {
+  top: -40px;
+  left: 30px;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  border: 3px solid #fff;
+}
+
+/* Bottom right image */
+.exp-img.overlap-imgs img.img-overlap {
+  bottom: -40px;
+  right: 30px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  border: 3px solid #fff;
+}
+
+
+
+.skills-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  gap: 0;
+}
+
+.projects p {
+  margin-top: 1rem;
+  text-align: left;
+  width: 100%;
+  font-size: 1.25rem;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  color: #e56b1f;
+  background: #fff3ea;
+  border-radius: 12px;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 1.5rem;
+}
+
+.skills-flex p:hover {
+  background: #ff9f5a;
+  color: #fff;
+}
+
+.skills-icons-col {
+  width: 100%;
+  background: #ff9f5a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 24px;
+  padding: 3rem 1rem; 
+}
+
+.icon-center {
+  background: #fff;
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.icon-center img {
+  width: 240px;   /* Set your desired width */
+  height: 240px;  /* Set your desired height */
+  object-fit: contain;
+  display: block;
+}
+
+.skills-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  background: #fff3ea;
+  color: #e56b1f;
+  padding: 3rem 2rem;
+  margin: 0;
+  border-radius: 24px;
+}
+
+.skills-desc ul {
+  /* margin-left: 2rem;    Pushes the list to the right */
+  /* or adjust padding-left for more/less indent */
+  padding-left: 4rem; 
+  margin-bottom: 2rem; /* Space below the list */
+}
+
+.skills-desc h1 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.skills-side-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-align: left;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.skills-desc .skills-side-title {
+  color: #e56b1f;
+}
+
+.skills.section-content {
+  max-width: 1700px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projet .project-block {
+  background: #fff3ea;
+  border-radius: 24px;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.projet .project-block.alt-bg {
+  background: #ff9f5a;
+  border-radius: 24px;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.project-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-img {
+  flex: 1 1 300px;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-img img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;   /* Ensures the image fills the box without distortion */
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+.project-details {
+  flex: 2 1 400px;
+  min-width: 300px;
+}
+
+.project-details h3 {
+  color: #e56b1f;
+  margin-top: 0;
+}
+
+.project-block.alt-bg .project-details h3 {
+  color: #fff3ea;
+  margin-top: 0;
+}
+
+.project-links {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  display: inline-block;
+}
+
+.btn-main {
+  background: #ff9f5a;
+  color: #fff;
+  border: none;
+}
+
+.btn-outline {
+  background: #fff;
+  color: #ff9f5a;
+  border: 1px solid #ff9f5a;
+}
+
+.btn-main:hover,
+.btn-outline:hover {
+  background: #e56b1f;
+  color: #fff;
+  border-color: #e56b1f;
+}
+
+.project-block.alt-bg .btn-main {
+  background: #fff3ea;
+  color: #e56b1f;
+  border: none;
+}
+
+.project-block.alt-bg .btn-main:hover {
+  background: #fff;
+  color: #e56b1f;
+}
+.project-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #c0392b; /* Or any color you prefer */
+  letter-spacing: 1px;
+}
+
+/* Simple modal styling */
+.modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex; align-items: center; justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #888;
+}
+.modal-content h4 {
+  margin-top: 0;
+}
+.modal-content input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Ensure all buttons use Rubik font */
+button, .btn {
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-size: 1rem; /* Adjust as needed for your design */
+}
+
+.project-block.alt-bg p,
+.project-block.alt-bg ul,
+.project-block.alt-bg ul li {
+  color: #ffffff;
+}
+
+/* Modern horizontal contact form style */
+.contact-form {
+  background: #ff9f5a; /* replaced with light orange */
+  color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  margin: 2rem 0 0 0;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+.contact-form h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.contact-form .form-group {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid #fff3ea; /* light peach accent */
+  background: transparent;
+  padding: 0.7rem 0.2rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  transition: border-color 0.2s, color 0.2s;
+  outline: none;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #fff3ea;
+  opacity: 0.8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid #ff9f5a; /* site accent color (orange) */
+  color: #fff;
+}
+
+.contact-form textarea {
+  min-height: 80px;
+  margin-top: 0.5rem;
+}
+
+.contact-form .form-row-single {
+  margin-bottom: 1.2rem;
+}
+
+.contact-form button.btn-main {
+  background: #e56b1f;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  padding: 0.7rem 0;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-form button.btn-main:hover {
+  background: #c65a12;
+  color: #fff;
+}
+
+#form-success,
+#form-error {
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  color: #fff3ea;
+}
+
+body.dark-mode {
+  background: #181c23;
+  color: #fff3ea;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: #10151a;
+  color: #fff3ea;
+}
+
+body.dark-mode .accueil,
+body.dark-mode .about,
+body.dark-mode .experience,
+body.dark-mode .education,
+body.dark-mode .skills,
+body.dark-mode .reseaux,
+body.dark-mode .telecom,
+body.dark-mode .programmation,
+body.dark-mode .systeme,
+body.dark-mode .cybersecurite,
+body.dark-mode .interet {
+  background: #232b36;
+  color: #fff3ea;
+}
+
+body.dark-mode .infos,
+body.dark-mode .contact-form {
+  background: #3d2a20;
+  color: #fff3ea;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  background: transparent;
+  color: #fff3ea;
+  border-bottom: 2px solid #ffb07c;
+}
+
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+  color: #e0cbbf;
+}
+
+body.dark-mode .btn-main,
+body.dark-mode .btn-outline {
+  background: #ffb07c;
+  color: #fff;
+  border-color: #ffb07c;
+}
+
+body.dark-mode .btn-main:hover,
+body.dark-mode .btn-outline:hover {
+  background: #e56b1f;
+  color: #fff;
+  border-color: #e56b1f;
+}
+
+body.dark-mode .skills-icons-col {
+  background: #3d2a20;
+  color: #fff3ea;
+}
+
+body.dark-mode .skills-desc {
+  background: #2b2220;
+  color: #fff3ea;
+}
+
+body.dark-mode .projet .project-block,
+body.dark-mode .projet .project-block.alt-bg {
+  background: #3d2a20;
+  color: #fff3ea;
+}
+
+body.dark-mode .project-details h3,
+body.dark-mode .skills-desc .skills-side-title {
+  color: #ffb07c;
+}
+
+body.dark-mode .exp-list .exp-block .exp-text {
+  color: #222; /* or #333 for a softer black */
+}
+
+
+.formation-img {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.formation-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#dark-mode-toggle {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 10000;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  color: #181c23;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+#dark-mode-toggle:hover {
+  background: #ff9f5a;
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(255,159,90,0.18);
+}
+
+body.dark-mode #dark-mode-toggle {
+  background: #2b2220;
+  color: #fff;
+  border: 1px solid #ffb07c;
+}
+
+/* Dark Mode Fix for .project-block.alt-bg */
+body.dark-mode .project-block.alt-bg {
+  background: #8a3e0f !important; /* Darker orange tone */
+  color: #fff3ea !important; /* Ensure text color is not overwritten */
+}
+
+body.dark-mode .project-block.alt-bg .project-details h3 {
+  color: #ff9f5a !important; /* Slightly lighter orange for headings */
+}
+
+body.dark-mode .project-block.alt-bg .btn-main {
+  background: #ff9f5a !important; /* Lighter orange for buttons */
+  color: #fff !important; /* Ensure button text color is not overwritten */
+}
+
+body.dark-mode .project-block.alt-bg .btn-main:hover {
+  background: #c65a12 !important; /* Darker orange for hover state */
+  color: #fff !important; /* Ensure hover text color is not overwritten */
+}
+
+/* Dark Mode Fix for .exp-list .exp-block */
+body.dark-mode .exp-list .exp-block {
+  background: #5a2d0f !important; /* Darker orange tone for the block */
+  color: #fff3ea !important; /* Ensure text color is not overwritten */
+}
+
+body.dark-mode .exp-list .exp-block:nth-child(even) {
+  background: #4c2310 !important; /* Even darker orange for even child blocks */
+  color: #fff3ea !important; /* Ensure text color is not overwritten */
+}
+
+/* Dark Mode Fix for .exp-list .exp-block .exp-text */
+body.dark-mode .exp-list .exp-block .exp-text {
+  
+  color: #ffffff !important; /* Ensure text color is readable */
+}
+
+body.dark-mode .exp-list .exp-block:nth-child(even) .exp-text {
+  
+  color: #ffffff !important; /* Ensure text color is readable */
+}
+body.dark-mode .skills-desc {
+  background: #5a2d0f !important; /* Slightly lighter background for contrast in dark mode */
+}
+
+/* Dark Mode Fix for Modal */
+body.dark-mode .modal-content {
+  background: #232b36; /* Dark mode background for the modal */
+  color: #fff3ea; /* Ensure text is readable */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+body.dark-mode .modal-content h4 {
+  color: #ffb07c; /* Accent color for headings */
+}
+
+body.dark-mode .modal-content input[type="email"] {
+  background: #181c23; /* Darker background for input field */
+  color: #fff3ea; /* Ensure text is readable */
+  border: 1px solid #ffb07c; /* Accent border color */
+}
+
+body.dark-mode .modal-content input[type="email"]::placeholder {
+  color: #b5c9d6; /* Light placeholder text color */
+}
+
+body.dark-mode .modal-content button.btn-main {
+  background: #ffb07c; /* Accent button background */
+  color: #fff; /* Button text color */
+}
+
+body.dark-mode .modal-content button.btn-main:hover {
+  background: #e56b1f; /* Darker hover background */
+  color: #fff; /* Ensure hover text color is readable */
+}
+
+body.dark-mode .close-modal {
+  color: #e6f7f4; /* Close button color */
+}
+
+/* Hobbies Section */
+.hobbies-list {
+  display: flex;
+  flex-wrap: nowrap; /* Ensure all hobbies line up horizontally */
+  gap: 2rem; /* Add spacing between hobbies */
+  justify-content: center;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.hobby {
+  background: #ffd9c2; /* Pale peach (replacing light green) */
+  color: #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 300px; /* Fixed width for consistent layout */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.hobby img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Limit height for consistent sizing */
+  width: auto;
+  object-fit: cover; /* Ensure the image fits properly */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.hobby h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hobby p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Dark Mode for Hobbies Section */
+body.dark-mode .hobbies-list .hobby {
+  background: #5a2d0f; /* Dark orange tone for dark mode */
+  color: #e6f7f4; /* Ensure text is readable */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode */
+}
+
+body.dark-mode .hobbies-list .hobby img {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for images in dark mode */
+}
+
+/* Footer Social Links */
+footer .social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .social-links a img {
+  width: 40px; /* Adjust size */
+  height: 40px; /* Adjust size */
+  background: #fff; /* White background */
+  border-radius: 50%; /* Circular border radius */
+  padding: 5px; /* Add padding inside the circle */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .social-links a img:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Dark Mode for Footer Social Links 
+body.dark-mode footer .social-links a img {
+  background: #232b36;  Dark background for icons in dark mode 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);  Stronger shadow for dark mode 
+} 
+*/
+
+.project-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.project-nav .btn {
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+}
+
+/* make "Retour aux projets" less dominant when desired */
+.project-nav a.btn-outline {
+  background: transparent;
+}
+
+/* Dark mode fixes for the projects section */
+body.dark-mode .projects {
+  background: #232b36;
+  color: #fff3ea;
+}
+
+body.dark-mode .projects h2::after {
+  background: #ffb07c; /* lighter orange accent in dark mode */
+}
+
+body.dark-mode .projects p {
+  background: #3d2a20; /* neutral/darker panel */
+  color: #fff3ea;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .projects .project-grid {
+  gap: 2rem;
+}
+
+body.dark-mode .project-card {
+  background: #2b2220;
+  color: #fff3ea;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,176,124,0.06);
+}
+
+body.dark-mode .project-card h3,
+body.dark-mode .project-card p,
+body.dark-mode .project-card li {
+  color: #fff3ea;
+}
+
+body.dark-mode .project-card a {
+  color: #ffb07c;
+}
+
+body.dark-mode .projects .project-links .btn-main {
+  background: #ff9f5a;
+  color: #fff;
+  border-color: transparent;
+}
+
+body.dark-mode .projects .project-links .btn-outline {
+  background: transparent;
+  color: #ffb07c;
+  border-color: #ffb07c;
+}
+
+/* project navigation buttons */
+body.dark-mode .project-nav .btn,
+body.dark-mode .project-nav a.btn-outline {
+  background: #3d2a20;
+  color: #fff3ea;
+  border-color: #ffb07c;
+}
